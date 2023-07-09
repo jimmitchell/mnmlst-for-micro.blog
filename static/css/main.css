@@ -16,7 +16,7 @@
 }
 
 body {
-    max-width: 36em;
+    max-width: 38em;
     margin: 2em auto;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -24,4 +24,13 @@ body {
     line-height: 1.7;
     background-color: var(--background);
     color: var(--text);
+}
+
+a, a:link, a:visited {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
 }
