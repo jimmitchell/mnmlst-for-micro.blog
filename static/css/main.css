@@ -1,0 +1,27 @@
+:root {
+    --background: #ffffff;
+    --text: #55585b;
+    --link: #00a1e0;
+    --accent: #7a7b7c;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #222324;
+        --text: #f8f8f2;
+        --link: #00a1e0;
+        --accent: #7a7b7c;
+    }
+}
+
+body {
+    max-width: 36em;
+    margin: 2em auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 0 1em;
+    line-height: 1.7;
+    background-color: var(--background);
+    color: var(--text);
+}
