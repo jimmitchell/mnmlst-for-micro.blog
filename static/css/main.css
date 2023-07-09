@@ -26,6 +26,10 @@ body {
     color: var(--text);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
 a, a:link, a:visited {
     color: var(--link);
     text-decoration: none;
