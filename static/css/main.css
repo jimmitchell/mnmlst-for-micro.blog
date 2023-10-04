@@ -1,7 +1,7 @@
 :root {
     --background: #ffffff;
     --text: #55585b;
-    --link: #00a1e0;
+    --link: #0097A7;
     --accent: #7a7b7c;
 }
 
@@ -19,11 +19,11 @@ html {
 }
 
 body {
-    max-width: 40em;
-    margin: 2em auto;
+    max-width: 74rem;
+    margin: 2rem auto;
     font-family: Roboto, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
-	padding: 0 1em;
+	padding: 0 2rem;
     line-height: 1.6;
     background-color: var(--background);
     color: var(--text);
@@ -47,7 +47,7 @@ a:hover, a:active, a:focus {
 	border-bottom: 2px solid var(--link);
 }
 header.site-header > * {
-	line-height: 1;
+	line-height: 5rem;
 	font-size: 1.3rem;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -78,7 +78,7 @@ header.site-header:after {
 	clear: both;
 	content: " ";
 	display: table;
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
 }
 
 .h-entry {
