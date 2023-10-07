@@ -2,9 +2,9 @@
 <div class="post h-entry">
 
   <header class="post-header">
-    <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a>
+    <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Monday, January 2, 2006" }}</time></a>
     {{ if .Title }}
-    <h2 class="p-name">{{ .Title }}</h2>
+    <h2 class="post-title p-name">{{ .Title }}</h2>
     {{ end }}
   </header>
 
@@ -20,7 +20,6 @@
   </ul>
   {{ end }}
 
-</div>
 {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/tinylytics.html") }}
 <ul class="reply-buttons">
 {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
@@ -34,6 +33,10 @@
 {{ end }}
 {{ end }}
 </ul>
+
+
+</div>
+
 
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
