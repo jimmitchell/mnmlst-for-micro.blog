@@ -99,15 +99,16 @@ header.site-header > * {
 	font-weight: 400;
 	text-transform: uppercase;
 }
+header.site-header > a {
+	color: var(--text);
+}
+header.site-header > a:hover,
+header.site-header > a:active {
+	color: var(--link);
+}
 .site-title {
 	float: left;
 	margin: 0;
-}
-.site-title a {
-	color: var(--text);
-}
-.site-title a:hover, .site-title a:active {
-	color: var(--link);
 }
 .site-nav {
 	float: right;
