@@ -99,11 +99,11 @@ header.site-header > * {
 	font-weight: 400;
 	text-transform: uppercase;
 }
-header.site-header > a {
+header.site-header a {
 	color: var(--text);
 }
-header.site-header > a:hover,
-header.site-header > a:active {
+header.site-header a:hover,
+header.site-header a:active {
 	color: var(--link);
 }
 .site-title {
