@@ -105,7 +105,6 @@ header.site-header > * {
 }
 .site-title a {
 	color: var(--text);
-	font-weight: 500;
 }
 .site-title a:hover, .site-title a:active {
 	color: var(--link);
