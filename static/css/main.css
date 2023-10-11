@@ -253,6 +253,7 @@ ul.reply-buttons li *, ul.reply-buttons li *:hover {
 .post-nav .prev a:hover, .post-nav .next a:hover,
 .post-nav .prev a:active, .post-nav .next a:active {
 	background-color: var(--link);
+	color: var(--background);
 	border: none;
 }
 .post-nav:after {
