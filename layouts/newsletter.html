@@ -2,41 +2,34 @@
 	a {
 		color: #00a1e0;
 	}
-
 	a:hover {
 		text-decoration: none;
 	}
-
 	.microblog_permalink {
 		color: #00a1e0;
 		font-size: 0.9em;
 		text-decoration: none;
 	}
-
 	.email-profile-photo {
 		border-radius: 80px;
 		vertical-align: middle;
 		max-width: 80px;
 	}
-
 	.microblog_footer {
 		border-top: 1px solid #00a1e0;
 		padding-top: 5px;
 		margin-top: 5px;
 	}
-
 	img {
-		border-radius: 5px;
+		border-radius: 6px;
 		width: 100%;
 		height: auto;
 		max-width: 1000px;
 	}
-
 	.intro {
 		border-bottom: 1px solid #00a1e0;
 		padding-bottom: 20px;
 	}
-
 	.post {
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -44,7 +37,7 @@
 </style>
 
 <div class="microblog_email">
-	<img src="{{ .Site.Author.avatar }}" width="72" height="72" alt="Profile icon" class="email-profile-photo">
+	<img src="{{ .Site.Author.avatar }}" width="60" height="60" alt="Profile icon" class="email-profile-photo">
 	<h2>{{ .Site.Title }}</h2>
 
 	{{ if gt (len .Intro) 0 }}

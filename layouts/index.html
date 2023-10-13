@@ -10,8 +10,8 @@
             <div class="e-content">
                 {{ .Summary | safeHTML }}
 				{{ if .Truncated }}
-        <p style="margin-top:1em;"><a class="read-more" href="{{ .Permalink }}">Read More</a></p>
-        {{ end }}
+                    <p style="margin-top:1em;"><a class="read-more" href="{{ .Permalink }}">Read More</a></p>
+                {{ end }}
             </div>
             {{ else }}
             <div class="e-content">

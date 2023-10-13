@@ -16,9 +16,11 @@ body {
     line-height: 1.6;
     background-color: var(--background);
     color: var(--text);
+	max-width: 74rem;
 	-ms-word-wrap: break-word;
     word-wrap: break-word;
 	font-stretch: normal;
+	font-feature-settings: "onum","kern","liga","clig","calt";
     font-variant-ligatures: none !important;
 	text-rendering: geometricPrecision;
     -moz-osx-font-smoothing: grayscale;
@@ -70,7 +72,6 @@ a:hover, a:active, a:focus {
 	border-bottom: 1px solid var(--link);
 }
 header {
-	max-width: 90rem;
 	margin: 0 auto;
 }
 header.site-header > * {
@@ -109,7 +110,7 @@ header.site-header > * {
 .site-nav li a {
 	color: var(--text);
 	background-color: var(--accent-light);
-	padding: 6px 9px;
+	padding: 7px 9px 6px;
 	border-radius: 6px;
 	border: none;
 }
@@ -126,7 +127,6 @@ header.site-header:after {
 	margin-bottom: 3rem;
 }
 .page-content {
-	max-width: 72rem;
 	margin: 0 auto;
 	margin-bottom: 5rem;
 	min-height: calc(100vh - 319px);
@@ -169,7 +169,7 @@ a.read-more {
 	border: none;
 	text-transform: uppercase;
 	background-color: var(--accent-light);
-	padding: 6px 9px;
+	padding: 7px 9px 6px;
 	border-radius: 6px;
 }
 a.read-more:hover, a.read-more:active {
@@ -255,7 +255,7 @@ ul.reply-buttons li *, ul.reply-buttons li *:hover {
 .post-nav .prev a, .post-nav .next a {
 	background-color: var(--accent-light);
 	color: var(--text);
-	padding: 6px 9px;
+	padding: 7px 9px 6px;
 	border: none;
 	border-radius: 6px;
 	text-transform: uppercase;
@@ -290,18 +290,39 @@ a.conversation-on-mb {
 	background-color: var(--accent-light);
 	font-size: 1.3rem;
 	border-radius: 6px;
-	padding: 6px 9px;
+	padding: 7px 9px 6px;
     text-transform: uppercase;
     line-height: 1.6;
     display: inline-block;
 }
 .tinylytics_kudos:hover,
-a.conversation-on-mb:hover {
+a.conversation-on-mb:hover,
+.tinylytics_kudos:active,
+a.conversation-on-mb:active {
 	border: none;
 	background: var(--link);
 	color: var(--background);
 }
-
+.site-nav li a:hover,
+.site-nav li a:active,
+a.read-more:hover,
+a.read-more:active,
+.tinylytics_kudos:hover,
+.tinylytics_kudos:active,
+a.conversation-on-mb:hover,
+a.conversation-on-mb:active,
+.post-nav .prev a:hover,
+.post-nav .prev a:active,
+.post-nav .next a:hover,
+.post-nav .next a:active,
+ul.reply-buttons li *:hover,
+ul.reply-buttons li *:active {
+	-webkit-transition:  background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
 @media only screen and (max-width: 740px) {
 	.site-title, .site-nav {
 		float: none;
