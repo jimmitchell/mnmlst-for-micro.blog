@@ -76,7 +76,6 @@ header {
 header.site-header > * {
 	line-height: 5rem;
 	font-size: 1.3rem;
-	/*font-weight: 400;*/
 	text-transform: uppercase;
 }
 .site-title {
@@ -85,7 +84,7 @@ header.site-header > * {
 }
 .site-title a {
 	background: none;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	padding: 0;
 	color: var(--text);
 }
@@ -165,6 +164,7 @@ header.site-header:after {
 	border-radius: 6px;
 }
 a.read-more {
+	color: var(--text);
 	font-size: 1.3rem;
 	border: none;
 	text-transform: uppercase;
@@ -254,6 +254,7 @@ ul.reply-buttons li *, ul.reply-buttons li *:hover {
 }
 .post-nav .prev a, .post-nav .next a {
 	background-color: var(--accent-light);
+	color: var(--text);
 	padding: 6px 9px;
 	border: none;
 	border-radius: 6px;
@@ -284,7 +285,7 @@ footer {
 .tinylytics_kudos,
 .conversation-on-mb {
 	text-decoration: none;
-	color: var(--link);
+	color: var(--text);
 	border: none;
 	background-color: var(--accent-light);
 	font-size: 1.3rem;
@@ -306,7 +307,7 @@ footer {
 		float: none;
 		text-align: center;
 	}
-	header.site-header > .site-title {
+	.site-title a {
 		font-size: 2rem;
 	}
 	.site-nav li {
