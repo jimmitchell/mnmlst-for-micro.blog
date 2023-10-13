@@ -283,7 +283,7 @@ footer {
 	margin-bottom: 1.5rem;
 }
 .tinylytics_kudos,
-.conversation-on-mb {
+a.conversation-on-mb {
 	text-decoration: none;
 	color: var(--text);
 	border: none;
@@ -296,7 +296,7 @@ footer {
     display: inline-block;
 }
 .tinylytics_kudos:hover,
-.conversation-on-mb:hover {
+a.conversation-on-mb:hover {
 	border: none;
 	background: var(--link);
 	color: var(--background);
