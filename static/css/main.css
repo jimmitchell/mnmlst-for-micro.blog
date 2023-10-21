@@ -319,10 +319,10 @@ a.conversation-on-mb:active,
 	color: var(--background);
 }
 .photos-grid--style-masonry .photos-grid__item img {
-	filter: saturate(.85);
+	margin-bottom: 10px;
 }
 .photos-grid--style-masonry .photos-grid__item img:hover {
-	filter: saturate(1.5);
+	opacity: 0.8;
 }
 .site-nav li a:hover,
 .site-nav li a:active,
