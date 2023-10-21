@@ -92,8 +92,6 @@ header.site-header > * {
 	background: none;
 	padding: 0;
 	color: var(--text);
-	font-weight: 500;
-	font-size: 1.6rem;
 }
 .site-title a:hover,
 .site-title a:active {
