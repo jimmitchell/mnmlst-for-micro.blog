@@ -12,9 +12,10 @@
 	{{ range $list }}
 
 	<p class="h-entry">
+		<i class="fa-regular fa-calendar"></i>
 		<a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Monday, January 2, 2006" }}</time></a></br>
 		{{ if .Title }}
-			<span class="p-name"><b>{{ .Title }}</b>: </span>
+			<span class="p-name post-title"><b>{{ .Title }}</b>: </span>
 		{{ end }}
 		<span class="p-summary">{{ .Summary | truncate 125 }}</span>
 	</p>
